@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="viewport" content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Timetable</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/default.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/navfooter_white.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/timetable.css'>
+</head>
+<body>
+  
+  <main>
+    <div class="top_block">
+        <button class="btn-left btn-default">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <div class="monthDisplay"></div>
+      <button class="btn-right btn-default">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="weekdays">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+
+    <!-- <div class="calendar"> -->
+      <div class="container">
+        <div class="week week1">
+   
+        </div>
+        <div class="week week2">
+    
+        </div>
+        <div class="week week3">
+
+        </div>
+        <div class="week week4">
+  
+        </div>
+        <div class="week week5">
+
+        </div>
+        <div class="week week6">
+
+        </div>
+
+        <div class="schedule">
+          <div class="leftbar">
+            <div>09:00 ~ 10:00</div>
+            <div>10:00 ~ 11:00</div>
+            <div>11:00 ~ 12:00</div>
+            <div>12:00 ~ 13:00</div>
+            <div>13:00 ~ 14:00</div>
+            <div>14:00 ~ 15:00</div>
+            <div>15:00 ~ 16:00</div>
+            <div>16:00 ~ 17:00</div>
+            <div>17:00 ~ 18:00</div>
+            <div>18:00 ~ 19:00</div>
+            <div>19:00 ~ 20:00</div>
+            <div>20:00 ~ 21:00</div>
+            <div>21:00 ~ 22:00</div>
+          </div>
+
+          <div class="rightbar">
+            <div>09:00 ~ 10:00</div>
+            <div>10:00 ~ 11:00</div>
+            <div>11:00 ~ 12:00</div>
+            <div>12:00 ~ 13:00</div>
+            <div>13:00 ~ 14:00</div>
+            <div>14:00 ~ 15:00</div>
+            <div>15:00 ~ 16:00</div>
+            <div>16:00 ~ 17:00</div>
+            <div>17:00 ~ 18:00</div>
+            <div>18:00 ~ 19:00</div>
+            <div>19:00 ~ 20:00</div>
+            <div>20:00 ~ 21:00</div>
+            <div>21:00 ~ 22:00</div>
+          </div>
+
+          <div class="timeline"> 
+            
+              <!-- 09:00 ~ 10:00
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            10:00 ~ 11:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            11:00 ~ 12:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            12:00 ~ 13:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            13:00 ~ 14:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            14:00 ~ 15:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            15:00 ~ 16:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            16:00 ~ 17:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            17:00 ~ 18:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            18:00 ~ 19:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            19:00 ~ 20:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            20:00 ~ 21:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day">
+              <h4>Aerial Yoga</h4>
+              <p>Falynn Guobadia</p>
+            </div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+    
+            21:00 ~ 22:00
+    
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div>
+            <div class="time_day"></div> -->
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </main>
+
+
+
+
+  <!-- 新增課程視窗 -->
+  <div id="newClassModal">
+    <h2>New Class</h2>
+    <div class="newClassModal_container">
+        <input id="classNameInput" placeholder="Class Name" value="">
+        <label for="teacher">Select a Teacher</label>
+        <select name="teacher" id="teacher" required>
+            <option value=""> -- Teacher Name -- </option>
+            <option value="Megan Meyer">Megan Meyer</option>
+            <option value="Roger Sanders">Roger Sanders</option>
+            <option value="Eric Monroe">Eric Monroe</option>
+            <option value="Daniel Nguyen">Daniel Nguyen</option>
+            <option value="Elizabeth Ward">Elizabeth Ward</option>
+            <option value="Falynn Guobadia">Falynn Guobadia</option>
+            <option value="Carolyn Kelley">Carolyn Kelley</option>
+            <option value="John Cena">Cameron Parsons</option>
+            <option value="Nancy Becker">Nancy Becker</option>
+        </select>
+        <label for="attendance">Attendance</label>
+        <input id="attendance" type="number" name="points" min="0" max="12" value="">
+    </div>
+    <button id="cancelButton">Cancel</button>
+    <button id="saveButton">Save</button>
+  </div>
+  <!-- 刪除課程視窗 -->
+  <div id="deleteClassModal">
+    <h2>The Class</h2>
+    <div class="deleteClassModal_container">
+        <input id="classText" value="" readonly>
+        <label for="teacherDisplay">Select a Teacher</label>
+        <select name="teacherDisplay" id="teacherDisplay" disabled>
+            <option></option>
+        </select>
+        <label for="attendanceDisplay">Attendance</label>
+        <input id="attendanceDisplay" type="number" name="points" min="0" max="12" value="" disabled>
+    </div>
+    <button id="closeButton">Close</button>
+    <button id="deleteButton">Delete</button>
+  </div>
+  <!-- 刪除課程視窗 end-->
+
+  <!-- 模糊背景 -->
+  <div id="modalBackDrop"></div>
+
+  
+  <!-- main end -->
+
+ 
+  
+<script src="js/timetable.js"></script>
+</body>
+</html>
+
